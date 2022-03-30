@@ -1,0 +1,4 @@
+std_msgs/String robot_name
+std_msgs/String robot_state
+std_msgs/Int8 Battery_Charge_flag
+std_msgs/Int8 Battery_Capacity

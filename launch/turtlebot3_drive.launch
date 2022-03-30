@@ -1,0 +1,19 @@
+<launch>
+
+  <group ns = "tb3_0">
+    <node name="SampleTurtlebotNode" pkg="majorturtle" type="drive" required="true" output="screen"/>
+    <node name="Aruco_Node" pkg="majorturtle" type="aruco" required="true" output="screen"/>
+    <node name="LineDetect_Node" pkg="majorturtle" type="line" required="true" output="screen"/>
+    <node name="Motion_Node" pkg="majorturtle" type="motion" required="true" output="screen"/>
+    <node name="Battery_Node" pkg="majorturtle" type="battery" required="true" output="screen"/>
+  </group>
+  
+  <group ns = "tb3_1">
+    <node name="SampleTurtlebotNode" pkg="majorturtle" type="drive" required="true" output="screen"/>
+    <node name="Aruco_Node" pkg="majorturtle" type="aruco" required="true" output="screen"/>
+    <node name="LineDetect_Node" pkg="majorturtle" type="line" required="true" output="screen"/>
+    <node name="Motion_Node" pkg="majorturtle" type="motion" required="true" output="screen"/>
+    <node name="Battery_Node" pkg="majorturtle" type="battery" required="true" output="screen"/>
+  </group>
+
+</launch>

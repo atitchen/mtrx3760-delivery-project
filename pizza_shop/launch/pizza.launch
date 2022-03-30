@@ -1,0 +1,10 @@
+<launch>
+  <arg name="house_ID" default="/house_ID"/>
+  <arg name="name" default="Pizza"/>
+
+  <param name="house_ID_topic_name" value="$(arg house_ID)"/>
+
+  <node name="PizzaShopNode" pkg="pizza_shop" type="pizza_shop" required="true" output="screen"/>
+
+  <node name="receive_order_node" pkg="pizza_shop" type="receive_order" required="true" output="screen"/>
+</launch>
